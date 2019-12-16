@@ -1,5 +1,7 @@
 # Integracion Continua
 
+Norma and Gyerald
+
 ## Requerimientos
 
 - [git][git] v2.14.1 o mayor
