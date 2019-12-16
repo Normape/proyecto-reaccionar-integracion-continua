@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for other/configuration/calculator.solution/src/calculator.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">other/configuration/calculator.solution/src</a> calculator.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>14/94</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">5.13% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.63% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>13/91</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
+import PointTarget from 'react-point'
+import Loadable from 'react-loadable'
+import styles from './calculator.module.css'
+&nbsp;
+// NOTE: Normally I wouldn't do this, but I wanted to include code
+// splitting in this example because it's something you have to
+// handle with Jest and many people will want to know :).
+const CalculatorDisplay = Loadable({
+  loader: () =&gt; import('./calculator-display').then(mod =&gt; mod.default),
+  loading: () =&gt; &lt;div style={{height: 120}}&gt;Loading display...&lt;/div&gt;,
+})
+&nbsp;
+class CalculatorKey extends React.Component {
+  render() {
+    const {onPress, className = <span class="branch-0 cbranch-no" title="branch not covered" >'',</span> ...props} = this.props
+&nbsp;
+    return (
+      &lt;PointTarget onPoint={onPress}&gt;
+        &lt;button className={`${styles.calculatorKey} ${className}`} {...props} /&gt;
+      &lt;/PointTarget&gt;
+    )
+  }
+}
+&nbsp;
+const CalculatorOperations = {
+  '/': <span class="fstat-no" title="function not covered" >(p</span>revValue, nextValue) =&gt; <span class="cstat-no" title="statement not covered" >prevValue / nextValue,</span>
+  '*': <span class="fstat-no" title="function not covered" >(p</span>revValue, nextValue) =&gt; <span class="cstat-no" title="statement not covered" >prevValue * nextValue,</span>
+  '+': <span class="fstat-no" title="function not covered" >(p</span>revValue, nextValue) =&gt; <span class="cstat-no" title="statement not covered" >prevValue + nextValue,</span>
+  '-': <span class="fstat-no" title="function not covered" >(p</span>revValue, nextValue) =&gt; <span class="cstat-no" title="statement not covered" >prevValue - nextValue,</span>
+  '=': <span class="fstat-no" title="function not covered" >(p</span>revValue, nextValue) =&gt; <span class="cstat-no" title="statement not covered" >nextValue,</span>
+}
+&nbsp;
+class Calculator extends React.Component {
+  state = {
+    value: null,
+    displayValue: '0',
+    operator: null,
+    waitingForOperand: false,
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  cl</span>earAll() {
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      value: null,
+      displayValue: '0',
+      operator: null,
+      waitingForOperand: false,
+    })
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  cl</span>earDisplay() {
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      displayValue: '0',
+    })
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  cl</span>earLastChar() {
+    const {displayValue} = <span class="cstat-no" title="statement not covered" >this.state</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      displayValue: displayValue.substring(0, displayValue.length - 1) || '0',
+    })
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  to</span>ggleSign() {
+    const {displayValue} = <span class="cstat-no" title="statement not covered" >this.state</span>
+    const newValue = <span class="cstat-no" title="statement not covered" >parseFloat(displayValue) * -1</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      displayValue: String(newValue),
+    })
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  in</span>putPercent() {
+    const {displayValue} = <span class="cstat-no" title="statement not covered" >this.state</span>
+    const currentValue = <span class="cstat-no" title="statement not covered" >parseFloat(displayValue)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (currentValue === 0) <span class="cstat-no" title="statement not covered" >return</span></span>
+&nbsp;
+    const fixedDigits = <span class="cstat-no" title="statement not covered" >displayValue.replace(/^-?\d*\.?/, '')</span>
+    const newValue = <span class="cstat-no" title="statement not covered" >parseFloat(displayValue) / 100</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      displayValue: String(newValue.toFixed(fixedDigits.length + 2)),
+    })
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  in</span>putDot() {
+    const {displayValue} = <span class="cstat-no" title="statement not covered" >this.state</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (!/\./.test(displayValue)) {</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+        displayValue: `${displayValue}.`,
+        waitingForOperand: false,
+      })
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  in</span>putDigit(digit) {
+    const {displayValue, waitingForOperand} = <span class="cstat-no" title="statement not covered" >this.state</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (waitingForOperand) {</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+        displayValue: String(digit),
+        waitingForOperand: false,
+      })
+    } else {
+<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+        displayValue:
+          displayValue === '0' ? String(digit) : displayValue + digit,
+      })
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  pe</span>rformOperation(nextOperator) {
+    const {value, displayValue, operator} = <span class="cstat-no" title="statement not covered" >this.state</span>
+    const inputValue = <span class="cstat-no" title="statement not covered" >parseFloat(displayValue)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (value == null) {</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+        value: inputValue,
+      })
+    } else <span class="cstat-no" title="statement not covered" >if (operator) {</span>
+      const currentValue = <span class="cstat-no" title="statement not covered" >value || 0</span>
+      const newValue = <span class="cstat-no" title="statement not covered" >CalculatorOperations[operator](currentValue, inputValue)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+        value: newValue,
+        displayValue: String(newValue),
+      })
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      waitingForOperand: true,
+      operator: nextOperator,
+    })
+  }
+&nbsp;
+  handleKeyDown = <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {
+    let {key} = <span class="cstat-no" title="statement not covered" >event</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (key === 'Enter') <span class="cstat-no" title="statement not covered" >key = '='</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (/\d/.test(key)) {</span>
+<span class="cstat-no" title="statement not covered" >      event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >      this.inputDigit(parseInt(key, 10))</span>
+    } else <span class="cstat-no" title="statement not covered" >if (key in CalculatorOperations) {</span>
+<span class="cstat-no" title="statement not covered" >      event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >      this.performOperation(key)</span>
+    } else <span class="cstat-no" title="statement not covered" >if (key === '.') {</span>
+<span class="cstat-no" title="statement not covered" >      event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >      this.inputDot()</span>
+    } else <span class="cstat-no" title="statement not covered" >if (key === '%') {</span>
+<span class="cstat-no" title="statement not covered" >      event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >      this.inputPercent()</span>
+    } else <span class="cstat-no" title="statement not covered" >if (key === 'Backspace') {</span>
+<span class="cstat-no" title="statement not covered" >      event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >      this.clearLastChar()</span>
+    } else <span class="cstat-no" title="statement not covered" >if (key === 'Clear') {</span>
+<span class="cstat-no" title="statement not covered" >      event.preventDefault()</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (this.state.displayValue === '0') {</span>
+<span class="cstat-no" title="statement not covered" >        this.clearAll()</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        this.clearDisplay()</span>
+      }
+    }
+  }
+&nbsp;
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyDown)
+    const stateFromLocalStorage = window.localStorage.getItem(
+      'calculator-state',
+    )
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (stateFromLocalStorage) {
+<span class="cstat-no" title="statement not covered" >      this.setState(JSON.parse(stateFromLocalStorage))</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentDidUpdate() {
+<span class="cstat-no" title="statement not covered" >    window.localStorage.setItem('calculator-state', JSON.stringify(this.state))</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillUnmount() {
+<span class="cstat-no" title="statement not covered" >    document.removeEventListener('keydown', this.handleKeyDown)</span>
+  }
+&nbsp;
+  render() {
+    const {displayValue} = this.state
+&nbsp;
+    const clearDisplay = displayValue !== '0'
+    const clearText = clearDisplay ? <span class="branch-0 cbranch-no" title="branch not covered" >'C' </span>: 'AC'
+&nbsp;
+    return (
+      &lt;div className={styles.calculator}&gt;
+        &lt;CalculatorDisplay value={displayValue} /&gt;
+        &lt;div className={styles.calculatorKeypad}&gt;
+          &lt;div className={styles.inputKeys}&gt;
+            &lt;div className={styles.functionKeys}&gt;
+              &lt;CalculatorKey
+                className={styles.keyClear}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt;
+<span class="cstat-no" title="statement not covered" >                  clearDisplay ? this.clearDisplay() : this.clearAll()</span>
+                }
+              &gt;
+                {clearText}
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.keySign}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.toggleSign()}</span>
+              &gt;
+                ±
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.keyPercent}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputPercent()}</span>
+              &gt;
+                %
+              &lt;/CalculatorKey&gt;
+            &lt;/div&gt;
+            &lt;div className={styles.digitKeys}&gt;
+              &lt;CalculatorKey
+                className={styles.key0}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(0)}</span>
+              &gt;
+                0
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.keyDot}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDot()}</span>
+              &gt;
+                ●
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key1}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(1)}</span>
+              &gt;
+                1
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key2}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(2)}</span>
+              &gt;
+                2
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key3}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(3)}</span>
+              &gt;
+                3
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key4}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(4)}</span>
+              &gt;
+                4
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key5}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(5)}</span>
+              &gt;
+                5
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key6}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(6)}</span>
+              &gt;
+                6
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key7}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(7)}</span>
+              &gt;
+                7
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key8}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(8)}</span>
+              &gt;
+                8
+              &lt;/CalculatorKey&gt;
+              &lt;CalculatorKey
+                className={styles.key9}
+                onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputDigit(9)}</span>
+              &gt;
+                9
+              &lt;/CalculatorKey&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className={styles.operatorKeys}&gt;
+            &lt;CalculatorKey
+              className={styles.keyDivide}
+              onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.performOperation('/')}</span>
+            &gt;
+              ÷
+            &lt;/CalculatorKey&gt;
+            &lt;CalculatorKey
+              className={styles.keyMultiply}
+              onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.performOperation('*')}</span>
+            &gt;
+              ×
+            &lt;/CalculatorKey&gt;
+            &lt;CalculatorKey
+              className={styles.keySubtract}
+              onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.performOperation('-')}</span>
+            &gt;
+              −
+            &lt;/CalculatorKey&gt;
+            &lt;CalculatorKey
+              className={styles.keyAdd}
+              onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.performOperation('+')}</span>
+            &gt;
+              +
+            &lt;/CalculatorKey&gt;
+            &lt;CalculatorKey
+              className={styles.keyEquals}
+              onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.performOperation('=')}</span>
+            &gt;
+              =
+            &lt;/CalculatorKey&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+&nbsp;
+export default Calculator
+&nbsp;
+/* eslint no-eq-null:0, eqeqeq:0, react/display-name:0 */
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 13 2019 09:59:56 GMT-0500 (-05)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>
